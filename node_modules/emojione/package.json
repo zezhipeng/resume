@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      "emojione",
+      "D:\\blog\\resume"
+    ]
+  ],
+  "_from": "emojione@*",
+  "_id": "emojione@2.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/emojione",
+  "_nodeVersion": "4.1.2",
+  "_npmUser": {
+    "email": "ryan@emojione.com",
+    "name": "emojione"
+  },
+  "_npmVersion": "2.14.4",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "emojione",
+    "raw": "emojione",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/emojione/-/emojione-2.1.0.tgz",
+  "_shasum": "d0100d67661baaba2258e7033e3b0c614c722f5b",
+  "_shrinkwrap": null,
+  "_spec": "emojione",
+  "_where": "D:\\blog\\resume",
+  "author": {
+    "email": "ryan@emojione.com",
+    "name": "Emoji One",
+    "url": "http://emojione.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Ranks/emojione/issues"
+  },
+  "dependencies": {},
+  "description": "Emoji One is a complete set of emojis designed for the web. It includes libraries to easily convert unicode characters to shortnames (:smile:) and shortnames to our custom emoji images. PNG and SVG formats provided for the emoji images.",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-qunit": "^0.5.2",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-imageoptim": "^1.4.1",
+    "grunt-jsonlint": "^1.0.4",
+    "grunt-spritesmith": "^4.6.0",
+    "grunt-svgstore": "^0.5.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d0100d67661baaba2258e7033e3b0c614c722f5b",
+    "tarball": "http://registry.npmjs.org/emojione/-/emojione-2.1.0.tgz"
+  },
+  "gitHead": "fd4bb7a26a39e93d0cb4ed90934e9e3f73ebca4b",
+  "homepage": "http://www.emojione.com",
+  "keywords": [
+    "Emoji One",
+    "emoji",
+    "emoji set",
+    "emojione",
+    "emojis",
+    "emoticons",
+    "smileys",
+    "smilies",
+    "unicode"
+  ],
+  "licenses": {
+    "type": "(CC-BY-SA-4.0 and MIT)",
+    "url": "https://github.com/Ranks/emojione/blob/master/LICENSE.md"
+  },
+  "main": "lib/js/emojione.js",
+  "maintainers": [
+    {
+      "name": "emojione",
+      "email": "ryan@emojione.com"
+    }
+  ],
+  "name": "emojione",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranks/emojione.git"
+  },
+  "scripts": {
+    "test": "grunt travis"
+  },
+  "version": "2.1.0"
+}

@@ -1,0 +1,147 @@
+extends layout
+block content
+    nav.navbar.navbar-inverse
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#resume")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+            .collapse.navbar-collapse#resume
+                ul.nav.navbar-nav
+                    li.active
+                        a About Me
+                    li
+                        a(href="http://blog.csdn.net/opengpeng12345") Blog
+                    li
+                        a(href="https://github.com/zezhipeng") git
+    .container-fluid(ng-controller="server")
+        .col-md-3
+            .col-md-12
+                .panel.panel-default
+                    .panel-heading
+                        h5.panel-title 关于我
+                    .panel-body.padding-0
+                        .resume-bg
+                            img(src="/images/bg.jpg")
+                        .resume-avatar
+                            img.img-circle(src="/images/avatar.jpg")
+                        .resume-detail
+                            h4 彭泽智
+                            h5.text-muted 全栈工程师
+                            .margin-left-5.resume-man
+                                .resume-one
+                                    .resume-icon
+                                        span.fa.fa-map-marker
+                                    span.text-muted.resume-text 杭州
+                                .resume-one
+                                    .resume-icon
+                                        span.fa.fa-mobile-phone
+                                span.text-muted 13524946924
+                                .resume-one
+                                    .resume-icon
+                                        span.fa.fa-envelope-o
+                                span.text-muted 372962347@qq.com
+                                .resume-one
+                                    .resume-icon
+                                        span 博客
+                                    a.text-muted.resume-text(href="http://blog.csdn.net/opengpeng12345") http://blog.csdn.net/opengpeng12345
+                                .resume-one
+                                    .resume-icon
+                                        span.fa.fa-git
+                                    a.text-muted.resume-text(href="https://github.com/zezhipeng") https://github.com/zezhipeng
+            .col-md-12
+                    .panel.panel-default
+                        .panel-body
+                            h5.text-muted 你的IP: #{ip}
+                            h5.text-muted 服务器 #{cpu.model}
+                            h4.text-muted 内存 #{memory}
+                            h5 {{memory}}
+                            .progress
+                                .progress-bar.progress-bar-info(ng-style="{'width':memory}")
+        .col-md-7
+            .row
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title 我会的
+                        .panel-body
+                            ul.timeline
+                                li.time-label
+                                    span.bg-danger 2014年11月开始
+                                li.timeline-item
+                                    .panel.panel-default
+                                        .panel-body
+                                            .tree-card(style="background-color:black")
+                                                img.img-responsive(src="/images/node.png" )
+                                            span.fa.fa-plus.plus
+                                            .tree-card
+                                                img.img-responsive(src="/images/express.jpg" )
+                                            span.fa.fa-plus.plus
+                                            .tree-card
+                                                img.img-responsive(src="/images/jade.jpg" )
+                                li.time-label
+                                    span.bg-warning 2015年2月-8月
+                                li.timeline-item
+                                    .panel.panel-default
+                                        .panel-body
+                                            .tree-card
+                                                img.img-responsive(src="/images/mongo.jpg" )
+                                            span.then.fa.fa-arrow-right
+                                            .tree-card
+                                                img.img-responsive(src="/images/bootstrap.jpg" )
+                                            span.then.fa.fa-arrow-right
+                                            .tree-card
+                                                img.img-responsive(src="/images/angular.jpg" )
+                                li.time-label
+                                    span.bg-primary 2015年8月
+                                li.timeline-item
+                                    .panel.panel-default
+                                        .panel-body
+                                            .tree-card
+                                                img.img-responsive(src="/images/react.jpg" )
+                                            span.then.fa.fa-arrow-right
+                                            .tree-card
+                                                img.img-responsive(src="/images/webpack.jpg" )
+                                            span.then.fa.fa-arrow-right
+                                            .tree-card
+                                                img.img-responsive(src="/images/gulp.jpg" )
+                                li.timeline-end
+                                    span now
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title 关于nodejs、expressjs和jade
+                        .panel-body
+                            p.p(ng-bind-html="nodeone|to_trusted")
+                            p.margin-top-10.p 项目的话，开始构建第一个流媒体网站
+                                a(href="http://www.seei.tv") http://www.seei.tv
+                                p(ng-bind-html="nodethree|to_trusted")
+                            p.p.margin-top-10(ng-bind-html="nodetwo|to_trusted")
+                            p.p.margin-top-10
+                                a(href="http://blog.csdn.net/opengpeng12345/article/details/50602036") 1.node stream api的应用，断电续传与秒传的例子
+                                br
+                                a(href="http://blog.csdn.net/opengpeng12345/article/details/50542963") 2.angular-restful
+                                br
+                                a(href="https://github.com/zezhipeng/react-socket.io-chat") 3.React编写聊天室
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title 关于angular等
+                        .panel-body
+                            p.p(ng-bind-html="angularjs|to_trusted")
+                            p.p.margin-top-10(ng-bind-html="angularjstwo|to_trusted")
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title 关于react等
+                        .panel-body
+                            p.p(ng-bind-html="react|to_trusted")
+
+
+
+        .col-md-6
+            #content
+            script(src="/js/app.js")
+        script(src="/js/todo.js")
