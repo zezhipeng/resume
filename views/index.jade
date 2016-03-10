@@ -52,14 +52,30 @@ block content
                                         span.fa.fa-git
                                     a.text-muted.resume-text(href="https://github.com/zezhipeng") https://github.com/zezhipeng
             .col-md-12
+                .panel.panel-default
+                    .panel-body
+                        h5.text-muted 你的IP: #{ip}
+                        h5.text-muted 服务器 #{cpu.model}
+                        h4.text-muted 内存 #{memory}
+                        h5 {{memory}}
+                        .progress
+                            .progress-bar.progress-bar-info(ng-style="{'width':memory}")
+            .col-md-12
                     .panel.panel-default
                         .panel-body
-                            h5.text-muted 你的IP: #{ip}
-                            h5.text-muted 服务器 #{cpu.model}
-                            h4.text-muted 内存 #{memory}
-                            h5 {{memory}}
-                            .progress
-                                .progress-bar.progress-bar-info(ng-style="{'width':memory}")
+                            .resume-one
+                                span 毕业学校
+                                span.text-muted.resume-text.margin-left-5 浙江大学城市学院
+                            .resume-one
+                                span 毕业时间
+                                span.text-muted.resume-text.margin-left-5 2014年6月
+                            .resume-one
+                                span 学历
+                                span.text-muted.resume-text.margin-left-5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp本科
+                            .resume-one
+                                span 专业
+                                span.text-muted.resume-text.margin-left-5 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp通信工程
+
         .col-md-7
             .row
                 .col-md-12
@@ -117,7 +133,7 @@ block content
                             p.p(ng-bind-html="nodeone|to_trusted")
                             p.margin-top-10.p 项目的话，开始构建第一个流媒体网站
                                 a(href="http://www.seei.tv") http://www.seei.tv
-                                p(ng-bind-html="nodethree|to_trusted")
+                                p.p(ng-bind-html="nodethree|to_trusted")
                             p.p.margin-top-10(ng-bind-html="nodetwo|to_trusted")
                             p.p.margin-top-10
                                 a(href="http://blog.csdn.net/opengpeng12345/article/details/50602036") 1.node stream api的应用，断电续传与秒传的例子
@@ -138,9 +154,19 @@ block content
                             .panel-title 关于react等
                         .panel-body
                             p.p(ng-bind-html="react|to_trusted")
-
-
-
+                .col-md-12
+                    .panel.panel-default
+                        .panel-heading
+                            .panel-title 项目及工作经历
+                        .panel-body
+                            p.p(ng-bind-html="process|to_trusted")
+                            p.p(ng-bind-html="process2|to_trusted")
+                            p.p(ng-bind-html="process3|to_trusted")
+                            p.p(ng-bind-html="process4|to_trusted")
+                            p.p(ng-bind-html="process5|to_trusted")
+                            p.p(ng-bind-html="process6|to_trusted")
+                            p.p(ng-bind-html="process7|to_trusted")
+                            p.p(ng-bind-html="process8|to_trusted")
         .col-md-6
             #content
             script(src="/js/app.js")
